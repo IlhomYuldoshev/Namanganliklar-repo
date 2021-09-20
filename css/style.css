@@ -1,0 +1,145 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Site header */
+.site-header {
+  padding-top: 30px;
+  background-color: #f6f6f6;
+}
+
+.site-logo-link {
+  margin-right: 35px;
+}
+
+.site-header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.site-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 19px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.site-header-left a + div {
+  margin-right: 25px;
+}
+
+.site-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-right > :not(:last-child) {
+  margin-right: 25px;
+}
+
+.search-input {
+  width: 275px;
+  border-radius: 60px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.search-input img {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.search-input input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.lng-changer {
+  width: 70px;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 39px;
+  background-color: #dce6ff;
+  display: flex;
+  align-items: center;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.lng-changer > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.lng-changer :last-child {
+  color: #a6a6a6;
+}
+
+.sign-link {
+  display: inline-block;
+  background-color: #7296ec;
+  border-radius: 10px;
+  width: 90px;
+  padding: 13px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+/* Site-nav */
+.site-nav {
+  background-color: #fff;
+  padding-top: 30px;
+}
+
+.site-nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.site-nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #7f7f7f;
+}
