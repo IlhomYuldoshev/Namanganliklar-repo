@@ -49,6 +49,9 @@ body {
   margin-right: 25px;
 }
 
+.currency span {
+  color: #2959ce;
+}
 .site-header-right {
   display: flex;
   align-items: center;
