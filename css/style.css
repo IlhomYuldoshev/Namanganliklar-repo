@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between;
   line-height: 19px;
-  font-weight: 700;
+  font-weight: 400;
   color: #555555;
 }
 
@@ -50,6 +50,7 @@ body {
 }
 
 .currency span {
+  font-weight: 700;
   color: #2959ce;
 }
 .site-header-right {
@@ -143,6 +144,7 @@ body {
 
 .site-nav-link {
   text-decoration: none;
+  font-size: 18px;
   font-weight: 500;
   color: #7f7f7f;
 }
