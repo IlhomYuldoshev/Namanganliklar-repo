@@ -33,7 +33,7 @@ body {
 .site-header-top {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .site-header-left {
@@ -45,10 +45,15 @@ body {
   color: #555555;
 }
 
-.site-header-left a + div {
+.site-header-left a {
   margin-right: 25px;
 }
-
+.currency-block {
+  display: flex;
+}
+.currency-block > :first-child {
+  margin-right: 25px;
+}
 .currency span {
   font-weight: 700;
   color: #2959ce;
@@ -61,28 +66,30 @@ body {
 .site-header-right > :not(:last-child) {
   margin-right: 25px;
 }
-
+.search-block {
+  position: relative;
+}
+.search-block img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
 .search-input {
   width: 275px;
+  line-height: 17px;
   border-radius: 60px;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-left: 41px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.search-input img {
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-.search-input input {
-  padding: 0;
+  border-color: transparent;
   margin: 0;
-  border: none;
+  transition: box-shadow 0.4s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 2px 2px 8px 5px #dee8ff;
 }
 
 .lng-changer {
@@ -97,8 +104,12 @@ body {
   padding-left: 3px;
   padding-bottom: 3px;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: box-shadow 0.4s ease;
 }
-
+.lng-changer:hover {
+  box-shadow: 2px 2px 8px #526799;
+}
 .lng-changer > :first-child {
   display: flex;
   align-items: center;
@@ -118,12 +129,21 @@ body {
   display: inline-block;
   background-color: #7296ec;
   border-radius: 10px;
+  border: 1px solid transparent;
   width: 90px;
   padding: 13px 20px;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   line-height: 19px;
+  transition: all 0.4s ease;
+}
+
+.sign-link:hover {
+  background-color: #fff;
+  color: #7296ec;
+  border-color: #7296ec;
+  box-shadow: 2px 2px 8px #526799;
 }
 
 /* Site-nav */
@@ -134,7 +154,7 @@ body {
 
 .site-nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -142,9 +162,18 @@ body {
   border-bottom: 1px solid #d1d1d1;
 }
 
+.site-nav-item:not(:last-child) {
+  margin-right: 34px;
+}
+
 .site-nav-link {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   color: #7f7f7f;
+  transition: color 0.4s ease;
+}
+
+.site-nav-link:hover {
+  color: #7296ec;
 }
