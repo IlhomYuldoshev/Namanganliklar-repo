@@ -3,11 +3,25 @@
   box-sizing: border-box;
 }
 
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
 }
 
@@ -150,6 +164,7 @@ body {
 .site-nav {
   background-color: #fff;
   padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 .site-nav-list {
@@ -176,4 +191,74 @@ body {
 
 .site-nav-link:hover {
   color: #7296ec;
+}
+
+/* Main section HERO */
+.advertising-img {
+  margin-bottom: 50px;
+}
+advertising-img a {
+  display: block;
+}
+.adv-img {
+  display: block;
+}
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.hero-list-item {
+  width: 393px;
+  list-style-type: none;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  padding: 10px 17px 18px;
+}
+
+.hero-list-item-heading {
+  margin-bottom: 10px;
+}
+.hero-list-item-heading a {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.hero-list-item p {
+  margin-bottom: 15px;
+  color: #4a4b4c;
+}
+
+.hero-list-item-img {
+  width: 360px;
+  height: 165px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.created-time-block {
+  display: flex;
+  align-items: center;
+}
+
+.created-time-block img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.created-time {
+  color: #5e5f61;
+  font-size: 12px;
+  line-height: 14px;
 }
