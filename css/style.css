@@ -197,7 +197,7 @@ body {
 .advertising-img {
   margin-bottom: 50px;
 }
-advertising-img a {
+.advertising-img a {
   display: block;
 }
 .adv-img {
@@ -215,7 +215,8 @@ advertising-img a {
 }
 
 .hero-list-item {
-  width: 393px;
+  max-width: 393px;
+  width: 100%;
   list-style-type: none;
   border-radius: 15px;
   background-color: #f6f6f6;
