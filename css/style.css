@@ -103,7 +103,7 @@ main{
   background-color: #fff;
   border-color: transparent;
   margin: 0;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .search-input:focus {
@@ -124,7 +124,7 @@ main{
   padding-bottom: 3px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.3s ease;
 }
 .lng-changer:hover {
   box-shadow: 2px 2px 8px #526799;
@@ -155,7 +155,7 @@ main{
   color: #fff;
   font-weight: 500;
   line-height: 19px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .sign-link:hover {
@@ -169,7 +169,6 @@ main{
 .site-nav {
   background-color: #fff;
   padding-top: 30px;
-  margin-bottom: 40px;
 }
 
 .site-nav-list {
@@ -191,7 +190,7 @@ main{
   font-size: 18px;
   font-weight: 500;
   color: #7f7f7f;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 
 .site-nav-link:hover {
@@ -199,10 +198,11 @@ main{
 }
 
 /* Main section news */
-.advertising-img {
+.advertising-img-block {
   margin-bottom: 50px;
+  margin-top: 40px;
 }
-.advertising-img a {
+.advertising-img-link {
   display: block;
 }
 .adv-img {
@@ -232,12 +232,17 @@ main{
 .news-list-item-heading {
   margin-bottom: 10px;
 }
-.news-list-item-heading a {
+.news-list-item-heading-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
   text-decoration: none;
   color: #000;
+  transition: color 0.3s ease;
+}
+
+.news-list-item-heading-link:hover{
+  color : #7296ec;
 }
 
 .news-list-item p {
@@ -264,11 +269,13 @@ main{
   margin-right: 10px;
 }
 .created-time {
+  display: inline-block;
+  text-decoration: none;
   color: #5e5f61;
   font-size: 12px;
   line-height: 14px;
   cursor: pointer;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 
 .created-time:hover{
@@ -276,7 +283,7 @@ main{
 }
 /* NOTIFICATION */
 
-.notification{
+.notification-inner{
   display: flex;
   justify-content: space-between;
   background-image: url(../img/notification.jpg);
@@ -306,10 +313,13 @@ main{
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
+  transition: color 0.3s ease , background-color 0.3s ease , border 0.3s ease;
+  border: 2px solid transparent;
 }
 .notification-btn:hover{
   color:#F78B3B;
   background-color: #fff;
+  border: 2px solid #F78B3B;
 }
 
 /* NEWS BOTTOM BLOCK */
@@ -351,12 +361,20 @@ main{
 }
 
 .card-title{
+  display: block;
+  text-decoration: none;
   font-weight:500;
   font-size:20px;
   line-height: 26px;
   color: #000;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
+
+.card-title:hover{
+  color : #7296ec;
+}
+
 .card-text{
   color: #4A4B4C;
   margin-bottom: 17px;
@@ -375,7 +393,7 @@ main{
   color: #000;
   line-height: 19px;
   margin: 17px auto;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 
 .show-more-cards-link:hover{
@@ -410,18 +428,32 @@ main{
 }
 
 .aside-right-card-title{
+  display: block;
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #000;
   margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.aside-right-card-title:hover{
+  color : #7296ec;
 }
 
 .aside-right-card-time{
+  display: block;
+  text-decoration: none;
   font-size: 13px;
   line-height: 15px;
   color: #5E5F61;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.aside-right-card-time:hover{
+  color : #000;
 }
 
 .aside-right-card:last-child .aside-right-card-time{

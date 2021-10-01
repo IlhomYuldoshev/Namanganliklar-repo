@@ -24,7 +24,7 @@
             <a class="site-logo-link" href="index.html">
               <img
                 src="img/logo.svg"
-                alt="site's-logo"
+                alt="Namanganliklar-site-logo"
                 width="276"
                 height="45"/>
             </a>
@@ -93,13 +93,13 @@
     </header>
 
     <main class="main-content">
-      <div class="container advertising-img">
-        <a href="#">
+      <div class="container advertising-img-block">
+        <a class="advertising-img-link" href="#">
           <img
             class="adv-img"
-            src="img/optimize.jpg"
-            alt="reklama-rasmi"
-            srcset="img/optimize.jpg 1x, img/optimize@2x.jpg 2x"
+            src="img/shopMe.jpg"
+            alt="ShopMe-adv-img"
+            srcset="img/shopMe.jpg 1x, img/shopMe@2x.jpg 2x"
             width="1200"
             height="128"/>
         </a>
@@ -110,9 +110,10 @@
           <ul class="news-list">
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Кандидат на пост канцлера ФРГ Шольц назвал условия
-                  коалиционного соглашения</a>
+                  коалиционного соглашения
+                </a>
               </h3>
               <p>
                 Лидер Социал-демократической партии Германии (СДПГ) и кандидат
@@ -133,12 +134,12 @@
                   srcset="img/icon1.jpg 1x, img/icon1@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">ИА Красная Весна 15:55</div>
+                <a href="#" class="created-time">ИА Красная Весна 15:55</a>
               </div>
             </li>
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Ученые доказали экспериментальным путем пользу покровных
                   культур</a
                 >
@@ -162,12 +163,12 @@
                   srcset="img/icon2.jpg 1x, img/icon2@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">Газета.Ru 12:54</div>
+                <a href="#" class="created-time">Газета.Ru 12:54</a>
               </div>
             </li>
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Baidu запустила публичный <br />
                   сервис роботакси Apollo Go в Шанхае</a>
               </h3>
@@ -189,12 +190,12 @@
                   srcset="img/icon3.jpg 1x, img/icon3@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">Хайтек+ 13:44</div>
+                <a href="#" class="created-time">Хайтек+ 13:44</a>
               </div>
             </li>
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Стали известны ёмкости аккумуляторов всех моделей iPhone
                   13</a>
               </h3>
@@ -216,12 +217,12 @@
                   srcset="img/icon4.jpg 1x, img/icon4@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">Digger.ru 14:25</div>
+                <a href="#" class="created-time">Digger.ru 14:25</a>
               </div>
             </li>
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Nature: ученые смогли доказать природное происхождение
                   коронавируса SARS-CoV-2</a>
               </h3>
@@ -243,12 +244,12 @@
                   srcset="img/icon5.jpg 1x, img/icon5@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">Lenta.ru 10:54</div>
+                <a href="#" class="created-time">Lenta.ru 10:54</a>
               </div>
             </li>
             <li class="news-list-item">
               <h3 class="news-list-item-heading">
-                <a href="#"
+                <a class="news-list-item-heading-link" href="#"
                   >Китайская марка JAC повысила цены на лифтбек и пикап в <br />
                   России</a>
               </h3>
@@ -271,7 +272,7 @@
                   srcset="img/icon6.jpg 1x, img/icon6@2x.jpg 2x"
                   width="20"
                   height="20"/>
-                <div class="created-time">Тарантас Ньюс 10:44</div>
+                <a href="#" class="created-time">Тарантас Ньюс 10:44</a>
               </div>
             </li>
           </ul>
@@ -281,11 +282,14 @@
         <!-- NOTIFICATION -->
 
       <section class='notification'>
-        <h3 class="notification-heading">
-          Хотите быть в курсе свежих новостей?  Включите уведомления!
-        </h3>
-
-        <a class="notification-btn" href="#">Включит</a>
+        <div class="container">
+          <div class="notification-inner">
+            <h3 class="notification-heading">
+              Хотите быть в курсе свежих новостей?  Включите уведомления!
+            </h3>
+            <a class="notification-btn" href="#">Включит</a>
+          </div>
+        </div>
       </section>
 
       <section class="news-bottom">
@@ -308,9 +312,9 @@
                 srcset="img/airplan.jpg 1x , img/airplan@2x.jpg 2x">
               <div class="card-body">
 
-                <h3 class="card-title">
+                <a href="#" class="card-title">
                   Китайский Чунцин запустил чартерный рейс для студентов до Британии
-                </h3>
+                </a>
 
                 <p class="card-text">
                   Чартерный рейс с 244 китайскими студентами вылетел из города центрального подчинения Чунцина на юго-западе Китая в британский Манчестер...
@@ -324,13 +328,13 @@
                     srcset="img/kv-icon.jpg 1x, img/kv-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <div class="created-time">
+                  <a class="created-time">
                     ИА Красная Весна 15:55
-                  </div>
+                  </a>
                 </div>
               </div>
-
             </div>
+            
             <div class="card">
               <img 
                 class="card-img" 
@@ -339,9 +343,9 @@
                 srcset="img/women.jpg 1x , img/women@2x.jpg 2x">
               <div class="card-body">
 
-                <h3 class="card-title">
+                <a href="#" class="card-title">
                   В Германии выпустят ограниченную партию плюшевых мишек в образе Меркель
-                </h3>
+                </a>
 
                 <p class="card-text">
                   БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по производству плюшевых игрушек в городе Кобург (федеральная земля Бавария) изготовила уникального...
@@ -355,13 +359,13 @@
                     srcset="img/t-icon.jpg 1x, img/t-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <div class="created-time">
+                  <a class="created-time">
                     ТАСС 11:35
-                  </div>
+                  </a>
                 </div>
               </div>
-
             </div>
+
             <div class="card">
               <img 
                 class="card-img" 
@@ -370,9 +374,9 @@
                 srcset="img/people.jpg 1x , img/people@2x.jpg 2x">
               <div class="card-body">
 
-                <h3 class="card-title">
+                <a href="#" class="card-title">
                   Акции КНР утратили доверие инвесторов. Что делать с бумагами прямо сейчас
-                </h3>
+                </a>
 
                 <p class="card-text">
                   За последние месяцы инвесторы в китайский рынок пережили настоящее потрясение — из-за ужесточения регулирования технологического сектора и критики некоторых...
@@ -386,13 +390,13 @@
                     srcset="img/square-icon.jpg 1x, img/square-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <div class="created-time">
+                  <a class="created-time">
                     РБК Инвестиции 09:35
-                  </div>
+                  </a>
                 </div>
               </div>
-
             </div>
+
             <div class="card">
               <img 
                 class="card-img" 
@@ -401,9 +405,9 @@
                 srcset="img/city.jpg 1x , img/city@2x.jpg 2x">
               <div class="card-body">
 
-                <h3 class="card-title">
+                <a href="#" class="card-title">
                   Китай раскритиковал заключенный Австралией, США и Великобританией антикитайский союз AUKUS
-                </h3>
+                </a>
 
                 <p class="card-text">
                   Не только Франция, которая лишилась многомиллиардного контракта с Австралий, осталась недовольна созданием трехстороннего оборонного альянса AUKUS, пишет Anna-News.info
@@ -417,9 +421,9 @@
                     srcset="img/e-icon.jpg 1x, img/e-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <div class="created-time">
+                  <a class="created-time">
                     Solenka.info 19:43
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -428,7 +432,7 @@
             <div class="show-more-cards">
               <a href="#" class="show-more-cards-link">Показать ещё</a> 
             </div>
-
+          
           </aside>
 
           <!-- ASIDE RIGHT -->
@@ -440,39 +444,39 @@
               <div class="aside-right-heading">Главное</div>
 
               <div class="aside-right-card">
-                <h4 class="aside-right-card-title">
+                <a href="#" class="aside-right-card-title">
                   В Фергане создадут узбекско-пакистанский университет
-                </h4>
-                <div class="aside-right-card-time">
+                </a>
+                <a href="#" class="aside-right-card-time">
                   Sputnik Узбекистан 14:09
-                </div>
+                </a>
               </div>
 
               <div class="aside-right-card">
-                <h4 class="aside-right-card-title">
+                <a href="#" class="aside-right-card-title">
                   В Фергане создадут узбекско-пакистанский университет
-                </h4>
-                <div class="aside-right-card-time">
+                </a>
+                <a href="#" class="aside-right-card-time">
                   Sputnik Узбекистан 14:09
-                </div>
+                </a>
               </div>
 
               <div class="aside-right-card">
-                <h4 class="aside-right-card-title">
+                <a href="#" class="aside-right-card-title">
                   В Фергане создадут узбекско-пакистанский университет
-                </h4>
-                <div class="aside-right-card-time">
+                </a>
+                <a href="#" class="aside-right-card-time">
                   Sputnik Узбекистан 14:09
-                </div>
+                </a>
               </div>
 
               <div class="aside-right-card">
-                <h4 class="aside-right-card-title">
+                <a href="#" class="aside-right-card-title">
                   В Фергане создадут узбекско-пакистанский университет
-                </h4>
-                <div class="aside-right-card-time">
+                </a>
+                <a href="#" class="aside-right-card-time">
                   Sputnik Узбекистан 14:09
-                </div>
+                </a>
               </div>
 
             </div>
