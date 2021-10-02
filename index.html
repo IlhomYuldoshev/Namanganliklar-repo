@@ -23,33 +23,35 @@
           <div class="site-header-left">
             <a class="site-logo-link" href="index.html">
               <img
+                class="site-logo-img"
                 src="img/logo.svg"
                 alt="Namanganliklar-site-logo"
-                width="276"
-                height="45"/>
+                width="264"
+                height="19"/>
             </a>
             <div class="currency-block">
-              <div class="currency"><span>$</span> 10137.2</div>
-              <div class="currency"><span>P</span> 138.26</div>
+              <div class="currency"><span class="currency-type">$</span> 10137.2</div>
+              <div class="currency"><span class="currency-type">P</span> 138.26</div>
             </div>
           </div>
 
           <div class="site-header-right">
-            <div class="search-block">
+            <form action="" method="GET" class="search-block">
               <img
+                class="search-block-img"
                 src="img/search-icon.svg"
                 alt="search-icon"
                 width="20"
                 height="20"/>
-              <input type="text" placeholder="Поиск" class="search-input" />
-            </div>
+              <input type="search" placeholder="Поиск" aria-label="Поиск" class="search-input" />
+            </form>
 
             <div class="lng-changer">
-              <div>уз</div>
-              <div>ру</div>
+              <a href="#" class="lng-changer-item active-lng">уз</a>
+              <a href="#" class="lng-changer-item">ру</a>
             </div>
 
-            <a href="#" class="sign-link">Войти</a>
+            <a href="#" class="button button-primary">Войти</a>
           </div>
         </div>
       </div>
@@ -328,7 +330,7 @@
                     srcset="img/kv-icon.jpg 1x, img/kv-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <a class="created-time">
+                  <a href="#" class="created-time">
                     ИА Красная Весна 15:55
                   </a>
                 </div>
@@ -359,7 +361,7 @@
                     srcset="img/t-icon.jpg 1x, img/t-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <a class="created-time">
+                  <a href="#" class="created-time">
                     ТАСС 11:35
                   </a>
                 </div>
@@ -390,7 +392,7 @@
                     srcset="img/square-icon.jpg 1x, img/square-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <a class="created-time">
+                  <a href="#" class="created-time">
                     РБК Инвестиции 09:35
                   </a>
                 </div>
@@ -421,7 +423,7 @@
                     srcset="img/e-icon.jpg 1x, img/e-icon@2x.jpg 2x"
                     width="20"
                     height="20"/>
-                  <a class="created-time">
+                  <a href="#" class="created-time">
                     Solenka.info 19:43
                   </a>
                 </div>
@@ -493,6 +495,10 @@
       </section>
     </main>
 
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+      <!-- <div class="container">
+        <img src="img/logo.svg" alt="Namanganliklar-24-logo-img">
+      </div> -->
+    </footer>
   </body>
 </html>
