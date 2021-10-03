@@ -272,6 +272,7 @@ main{
 }
 
 .news-list-item-img {
+  display: block;
   width: 360px;
   height: 165px;
   margin-bottom: 15px;
@@ -342,25 +343,53 @@ main{
   border: 2px solid #F78B3B;
 }
 
-/* NEWS BOTTOM BLOCK */
 
-.news-bottom-block{
+/* LAYOUT 2-1 */
+.layout-2-1{
   display: flex;
-  margin-bottom: 100px;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.aside-left{
+.layout-2-1-main{
+  width: 797px;
+}
+
+.layout-2-1-main-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.layout-2-1-main-item:first-child{
+  margin-bottom: 20px;
+}
+
+.layout-2-1-main-item:last-child{
+  margin-top: 17px;
+}
+
+.layout-2-1-sidebar{
+  width: 393px;
+  margin-top: 49px;
+}
+
+.layout-2-1-sidebar-item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+/* NEWS BOTTOM BLOCK */
+.global-news-left{
   margin-right: 10px;
 }
-.text-block{
+
+.global-news-left-heading{
   margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .card{
   display: flex;
-  width: 797px;
   border-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -420,20 +449,18 @@ main{
   color: #7296ec;
 }
 
-/* ASIDE RIGHT */
+/* GLOBAL NEWS RIGHT */
 
-.aside-right-block{
-  max-width: 393px;
+.global-news-right-block{
   width: 100%;
   background-color: #F6F6F6;
   border-radius: 15px;
   padding-top: 20px;
   padding-left: 17px;
   padding-bottom: 25px;
-  margin-bottom: 10px;
 }
 
-.aside-right-heading{
+.global-news-right-heading{
   margin-bottom: 25px;
   font-size: 24px;
   line-height: 28px;
@@ -441,13 +468,13 @@ main{
   font-weight: 500;
 }
 
-.aside-right-card:not(:last-child){
+.global-news-right-card:not(:last-child){
   width: 356px;
   border-bottom: 1px solid #D2D2D2;
   margin-bottom: 20px;
 }
 
-.aside-right-card-title{
+.global-news-right-card-title{
   display: block;
   text-decoration: none;
   font-weight: 500;
@@ -458,11 +485,11 @@ main{
   transition: color 0.3s ease;
 }
 
-.aside-right-card-title:hover{
+.global-news-right-card-title:hover{
   color : #7296ec;
 }
 
-.aside-right-card-time{
+.global-news-right-card-time{
   display: block;
   text-decoration: none;
   font-size: 13px;
@@ -472,15 +499,16 @@ main{
   transition: color 0.3s ease;
 }
 
-.aside-right-card-time:hover{
+.global-news-right-card-time:hover{
   color : #000;
 }
 
-.aside-right-card:last-child .aside-right-card-time{
+.global-news-right-card:last-child .global-news-right-card-time{
   margin-bottom: 0;
 }
 
-.aside-right-img{
+.global-news-right-img{
+  display: block;
   width: 393px;
   height: 338px;
   border-radius: 15px;
