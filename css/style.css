@@ -43,7 +43,14 @@ main{
   margin-left: auto;
   margin-right: auto;
 }
-
+.footer-container{
+  width: 100%;
+  max-width: 1040px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* OUTLINE STYLES */
 
 *:focus{
@@ -162,9 +169,6 @@ main{
   background-color: #fff;
 }
 
-.lng-changer :last-child {
-}
-
 .button {
   display: inline-block;
   border-radius: 10px;
@@ -219,6 +223,10 @@ main{
 }
 
 /* Main section news */
+.main-content{
+  margin-bottom: 100px;
+}
+
 .advertising-img-block {
   margin-bottom: 50px;
   margin-top: 40px;
@@ -518,5 +526,109 @@ main{
 
 .site-footer{
   background-color: #7297EF;
-  height: 36px;
+  padding-top: 40px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.footer-logo-text-link{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo-text-link:hover{
+  opacity: 0.8;
+}
+
+.footer-logo-text-link:active{
+  opacity: 0.6;
+}
+
+.footer-nav{
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CECECE;
+  margin-bottom: 20px;
+}
+
+.footer-text{
+  width: 230px;
+  margin-right: 203px;
+}
+
+.footer-list{
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.footer-list:not(:last-child){
+  margin-right: 100px;
+}
+
+.footer-item{
+  transition: opacity 0.3s ease;
+}
+
+.footer-item:hover{
+  opacity: 0.8;
+}
+
+.footer-item:active{
+  opacity: 0.6;
+}
+
+.footer-item:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contacts-text{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  width: 161px;
+}
+
+.contacts-list{
+  list-style-type: none;
+  display: flex;
+}
+.contacts-item{
+  transition: opacity 0.3s ease;
+}
+.contacts-item:hover{
+  opacity: 0.8;
+}
+
+.contacts-item:active{
+  opacity: 0.6;
+}
+
+.contacts-item:not(:last-child){
+  margin-right: 25px;
+}
+
+.contacts-img{
+  display: block;
 }
